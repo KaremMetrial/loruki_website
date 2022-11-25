@@ -1,0 +1,154 @@
+/*start variable*/
+:root {
+    --main-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+}
+
+/*end variable*/
+/*start navbar*/
+.navbar {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar nav ul a {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 20px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.navbar nav ul a::before {
+    content: "";
+    background-color: #fff;
+    left: 50%;
+    width: 0;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 2px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.navbar nav ul a:hover::before {
+    width: 100%;
+}
+
+/*end navbar*/
+/*start showcase*/
+.showcase {
+    height: 450px;
+    background-color: var(--main-color);
+    color: #fff;
+    position: relative;
+
+}
+
+.showcase::before,
+.showcase::after {
+    content: " ";
+    position: absolute;
+    height: 100px;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewy(-3deg);
+    --webkit-transform: skewy(-3deg);
+    --moz-transform: skewy(-3deg);
+}
+
+.showcase-text {
+}
+
+.showcase-text h1 {
+    font-size: 40px;
+}
+
+.showcase-text p {
+    margin: 20px 0;
+}
+
+.showcase-text a {
+
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+}
+
+.showcase-form h2 {
+
+}
+
+.showcase-form form {
+}
+
+.form-control {
+    margin: 19px 0;
+
+}
+
+.form-control input {
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.form-control input:focus {
+    outline: none;
+}
+
+/*end showcase*/
+/*start stats*/
+.stats {
+    padding-top: 100px;
+}
+.stats .container {
+
+}
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
+}
+.stats .grid h3 {
+    font-size: 35px;
+}
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+/*end stats*/
+/*start cli*/
+.cli .grid > *:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 /span 2;
+}
+
+/*end cli*/
+/*start cloud*/
+.cloud .grid {
+    grid-template-columns: 4fr  3fr;
+
+}
+/*end cloud*/
+/*start languages*/
+.languages .flex {
+    flex-wrap: wrap;
+}
+.languages .card{
+    text-align: center;
+    margin: 18px 10px 40px;
+}
+/*end languages*/
